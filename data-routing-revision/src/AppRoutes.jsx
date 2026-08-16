@@ -12,8 +12,7 @@ import Billing from "./pages/Billing.jsx";
 import Reports from "./pages/Reports.jsx";
 import Settings from "./pages/Settings.jsx";
 import SideLayout from "./layout/SideLayout.jsx";
-import TopLayout from "./layout/TopLayout.jsx";
-import MainLayout from "./layout/MainLayout.jsx";
+
 import DoctorCard from "./components/DoctorCard.jsx";
 
 const AppRoutes = () => {
@@ -68,14 +67,6 @@ const AppRoutes = () => {
           element: <DoctorCard />,
         },
       ],
-    },
-    {
-      path: "/toplayout",
-      element: <TopLayout />,
-    },
-    {
-      path: "/mainlayout",
-      element: <MainLayout />,
     },
   ]);
   return <RouterProvider router={router} />;
